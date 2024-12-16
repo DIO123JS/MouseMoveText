@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor = "#42AAFF">
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <h1>Привет мир</h1>
+
+<script>
+  $("h1").hide(0).show(1000)
+  function a(event){
+    $("h1").offset({left:event.pageX , top: event.pageY})
+  }
+  $("html").mousemove(a)
+</script>
+
+</body> 
+</html>
